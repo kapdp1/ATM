@@ -21,7 +21,7 @@ namespace ATM
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        private string _name;
         public MainWindow()
         {
             InitializeComponent();
