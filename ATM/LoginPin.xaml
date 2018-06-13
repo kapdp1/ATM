@@ -12,9 +12,9 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="label" Content="ENTER PIN HERE" HorizontalAlignment="Left" Margin="100,41,0,0" VerticalAlignment="Top" Foreground="#FFE6A975" Width="269" FontSize="24" Height="50" FontWeight="Bold"/>
-        <Button x:Name="button" Content="SUBMIT" HorizontalAlignment="Left" Margin="41,220,0,0" VerticalAlignment="Top" Width="108" Height="46" Click="SubmitButton" Background="#FF64472F" FontSize="18" FontWeight="Bold" Foreground="#FFD1AC81" Style="{StaticResource NormalButton}"/>
-        <Button x:Name="button1" Content="CLEAR" HorizontalAlignment="Left" Margin="174,220,0,0" VerticalAlignment="Top" Width="99" Height="46" Background="#FF64472F" FontSize="18" FontWeight="Bold" Foreground="#FFD1AC81" Click="ClearButton" Style="{StaticResource NormalButton}"/>
-        <Button x:Name="button1_Copy" Content="BACK" HorizontalAlignment="Left" Margin="294,220,0,0" VerticalAlignment="Top" Width="99" Height="46" Background="#FF64472F" FontSize="18" FontWeight="Bold" Foreground="#FFD1AC81" Click="BackButton" Style="{StaticResource NormalButton}"/>
+        <Button x:Name="button" Content="SUBMIT" HorizontalAlignment="Left" Margin="41,220,0,0" VerticalAlignment="Top" Width="108" Height="46" Click="SubmitButton" FontSize="18" FontWeight="Bold" Foreground="#FFD1AC81" Style="{StaticResource NormalButton}" Background="#FF64472F"/>
+        <Button x:Name="button1" Content="CLEAR" HorizontalAlignment="Left" Margin="174,220,0,0" VerticalAlignment="Top" Width="99" Height="46" FontSize="18" FontWeight="Bold" Foreground="#FFD1AC81" Click="ClearButton" Style="{StaticResource NormalButton}" Background="#FF64472F"/>
+        <Button x:Name="button1_Copy" Content="BACK" HorizontalAlignment="Left" Margin="294,220,0,0" VerticalAlignment="Top" Width="99" Height="46" FontSize="18" FontWeight="Bold" Foreground="#FFD1AC81" Click="BackButton" Style="{StaticResource NormalButton}" Background="#FF64472F"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="100,129,0,0" VerticalAlignment="Top" Width="198" Height="43" MaxLength="4" Background="#FFAE7B5A" FontSize="24"/>
     </Grid>
 </Window>

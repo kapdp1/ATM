@@ -37,6 +37,11 @@ namespace ATM
         {
             this.Close();
             SessionClass._sumbitSuccess = true;
+
+            SessionMenu session = new SessionMenu();
+
+            
+
             
         }
 

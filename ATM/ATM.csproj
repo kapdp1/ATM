@@ -61,6 +61,9 @@
     <Compile Include="AccountNumberPage.xaml.cs">
       <DependentUpon>AccountNumberPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AvailableBalance.xaml.cs">
+      <DependentUpon>AvailableBalance.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginPin.xaml.cs">
       <DependentUpon>LoginPin.xaml</DependentUpon>
     </Compile>
@@ -74,7 +77,14 @@
       <DependentUpon>SelectAccountPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SessionClass.cs" />
+    <Compile Include="SessionMenu.xaml.cs">
+      <DependentUpon>SessionMenu.xaml</DependentUpon>
+    </Compile>
     <Page Include="AccountNumberPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AvailableBalance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,6 +117,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SelectAccountPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SessionMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

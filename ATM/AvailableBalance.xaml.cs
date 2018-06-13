@@ -16,29 +16,24 @@ using System.Windows.Shapes;
 namespace ATM
 {
     /// <summary>
-    /// Interaction logic for SelectAccountPage.xaml
+    /// Interaction logic for AvailableBalance.xaml
     /// </summary>
-    public partial class SelectAccountPage : Page
+    public partial class AvailableBalance : Page
     {
-        public SelectAccountPage()
+        public AvailableBalance()
         {
             InitializeComponent();
         }
 
-        private void SavingsAccountButton(object sender, RoutedEventArgs e)
+        private void WithdrawButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void CheckingAccountButton(object sender, RoutedEventArgs e)
+        private void ExitButton(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void BackButton(object sender, RoutedEventArgs e)
-        {
-            
-
+            SessionMenu session_menu = new SessionMenu();
+            NavigationService.Navigate(session_menu);
         }
     }
 }
