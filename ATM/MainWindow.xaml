@@ -5,9 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ATM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Background="#FF6ADEEA"/>
+        Title="ABC BANK - ATM" Height="410" Width="715">
+    <Grid Margin="0,0,0,1">
 
+        <Grid.Background>
+            <ImageBrush ImageSource="watermark.png"/>
+        </Grid.Background>
+
+        <Label x:Name="label" Content=" WELCOME TO &#xA;   ABC BANK&#xA;        ATM" HorizontalAlignment="Left" Margin="176,53,0,0" VerticalAlignment="Top" Height="232" Width="362" FontSize="48" FontFamily="Stencil Std" Foreground="#FF9B7A22" FontWeight="Bold">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Button x:Name="button" Content="ENTER YOUR CARD" HorizontalAlignment="Left" Margin="176,255,0,0" VerticalAlignment="Top" Width="362" Height="59" FontSize="20" Foreground="#FF703D01" BorderBrush="#FF291E1E" Background="#FF9DA4E8" FontFamily="Segoe UI Semibold" Click="firstButtonClick"/>
+         
     </Grid>
 </Window>

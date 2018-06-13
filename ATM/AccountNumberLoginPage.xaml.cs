@@ -10,28 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MySql.Data.MySqlClient;
 
 namespace ATM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AccountNumberLoginPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AccountNumberLoginPage : Window
     {
-        
-        public MainWindow()
+        public AccountNumberLoginPage()
         {
             InitializeComponent();
         }
 
-
-        private void firstButtonClick(object sender, RoutedEventArgs e)
+        private void submit_button(object sender, RoutedEventArgs e)
         {
-            AccountNumberLoginPage accountLogin = new AccountNumberLoginPage();
-            accountLogin.Show();
+
+        }
+
+        private void cancel_button(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = new MainWindow();
+            mainwindow.Show();
             this.Close();
 
         }
