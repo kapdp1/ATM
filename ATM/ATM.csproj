@@ -58,10 +58,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AccountNumberPage.xaml.cs">
+      <DependentUpon>AccountNumberPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPin.xaml.cs">
+      <DependentUpon>LoginPin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SelectAccount.xaml.cs">
       <DependentUpon>SelectAccount.xaml</DependentUpon>
     </Compile>
-    <Page Include="AccountNumberLoginPage.xaml">
+    <Compile Include="SelectAccountPage.xaml.cs">
+      <DependentUpon>SelectAccountPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SessionClass.cs" />
+    <Page Include="AccountNumberPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ColorDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -69,25 +86,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AccountNumberLoginPage.xaml.cs">
-      <DependentUpon>AccountNumberLoginPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="LoginPin.xaml.cs">
-      <DependentUpon>LoginPin.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SelectAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectAccountPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="watermark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="abc.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

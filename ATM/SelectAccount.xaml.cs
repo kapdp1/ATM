@@ -23,5 +23,19 @@ namespace ATM
         {
             InitializeComponent();
         }
+
+        private void SavingsAccountButton(object sender, RoutedEventArgs e)
+        {
+
+
+
+        }
+
+        private void CheckingAccountButton(object sender, RoutedEventArgs e)
+        {
+
+
+
+        }
     }
 }

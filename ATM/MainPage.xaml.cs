@@ -10,31 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ATM
 {
     /// <summary>
-    /// Interaction logic for AccountNumberLoginPage.xaml
+    /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class AccountNumberLoginPage : Window
+    public partial class MainPage : Page
     {
-        public AccountNumberLoginPage()
+        public MainPage()
         {
             InitializeComponent();
         }
 
-        private void submit_button(object sender, RoutedEventArgs e)
+        private void firstButtonClick(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void cancel_button(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainwindow = new MainWindow();
-            mainwindow.Show();
-            this.Close();
-
+            AccountNumberPage accountNumberPage = new AccountNumberPage();
+            NavigationService.Navigate(accountNumberPage);
+        
         }
     }
 }

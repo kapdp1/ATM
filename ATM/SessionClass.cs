@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Statemanager
+namespace ATM
 {
-    public class Class1
+    static class SessionClass
     {
-
+        public static bool _sumbitSuccess = false;
     }
 }

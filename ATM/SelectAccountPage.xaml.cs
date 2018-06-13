@@ -12,33 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MySql.Data.MySqlClient;
 
 namespace ATM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SelectAccountPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SelectAccountPage : Page
     {
-        
-        public MainWindow()
+        public SelectAccountPage()
         {
-
             InitializeComponent();
-
-            MainPage mainpage = new MainPage();
-            frame.Navigate(mainpage);
-
         }
 
-
-        private void firstButtonClick(object sender, RoutedEventArgs e)
+        private void SavingsAccountButton(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
-        private void frame_Navigated(object sender, NavigationEventArgs e)
+        private void CheckingAccountButton(object sender, RoutedEventArgs e)
         {
 
         }
