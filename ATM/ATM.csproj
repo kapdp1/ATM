@@ -76,9 +76,13 @@
     <Compile Include="SelectAccountPage.xaml.cs">
       <DependentUpon>SelectAccountPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SessionATM.cs" />
     <Compile Include="SessionClass.cs" />
     <Compile Include="SessionMenu.xaml.cs">
       <DependentUpon>SessionMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SessionWindow.xaml.cs">
+      <DependentUpon>SessionWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AccountNumberPage.xaml">
       <SubType>Designer</SubType>
@@ -121,6 +125,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SessionMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SessionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -35,14 +35,37 @@ namespace ATM
 
         private void SubmitButton(object sender, RoutedEventArgs e)
         {
+            //this.Close();
+            //SessionClass._sumbitSuccess = true;
+
+            //SessionWindow SessionWindow = new SessionWindow();
+            // bool? sessionResult = SessionWindow.ShowDialog();
+
+            // LoginPin LoginPin = new LoginPin();
+            // bool? sessionResult = LoginPin.ShowDialog();
+
+
+
+            // if (sessionResult.HasValue && sessionResult.Value) {
+            //    SessionMenu SessionMenu = new SessionMenu();
+            //   SessionATM.IsStarted = true;
+
+            //}   
+
+            SessionWindow sessionwindow = new SessionWindow();
+            sessionwindow.Show();
             this.Close();
-            SessionClass._sumbitSuccess = true;
 
-            SessionMenu session = new SessionMenu();
-
+            MainPage m = new MainPage();
             
 
-            
+
+       
+
+
+
+
+
         }
 
         private void ClearButton(object sender, RoutedEventArgs e)
