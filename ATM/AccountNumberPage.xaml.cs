@@ -35,7 +35,13 @@ namespace ATM
         private void submit_button(object sender, RoutedEventArgs e)
         {
             LoginPin loginpin = new LoginPin();
-            loginpin.Show();
+            bool? result = loginpin.ShowDialog();
+
+            if(result.HasValue && result.Value)
+            {
+                SessionMenu sessionMenu = new SessionMenu();
+                NavigationService.Navigate(sessionMenu);
+            }
         }
 
         private void cancel_button(object sender, RoutedEventArgs e)
@@ -44,14 +50,6 @@ namespace ATM
             NavigationService.Navigate(mainPage);
         }
         
-        private void accPage_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (SessionClass._sumbitSuccess)
-            {
-                SelectAccountPage selectAccountPage = new SelectAccountPage();
-                NavigationService.Navigate(selectAccountPage);
-                SessionClass._sumbitSuccess = false;
-            }
-        }
+       
     }
 }

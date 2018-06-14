@@ -8,9 +8,6 @@ namespace ATM
 {
     class SessionATM
     {
-
-
         public static bool IsStarted { get; set; }
-
     }
 }

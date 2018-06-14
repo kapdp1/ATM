@@ -10,35 +10,40 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ATM
 {
     /// <summary>
-    /// Interaction logic for SelectAccountPage.xaml
+    /// Interaction logic for ChangePin.xaml
     /// </summary>
-    public partial class SelectAccountPage : Page
+    public partial class ChangePin : Window
     {
-        public SelectAccountPage()
+        public ChangePin()
         {
             InitializeComponent();
         }
 
-        private void SavingsAccountButton(object sender, RoutedEventArgs e)
+        private void SubmitButton(object sender, RoutedEventArgs e)
         {
-
+            if (currentPin.Password.Equals("1234"))
+            {
+                this.DialogResult = true;
+                this.Close();
+            }
         }
 
-        private void CheckingAccountButton(object sender, RoutedEventArgs e)
+        private void ClearButton(object sender, RoutedEventArgs e)
         {
-
+            currentPin.Clear();
+            newPin.Clear();
+            confirmNewPin.Clear();
+            
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
         {
-            
-
+            this.Close();
         }
     }
 }

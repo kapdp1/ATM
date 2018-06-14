@@ -10,5 +10,14 @@
                 <ResourceDictionary x:Name="resDic" Source="Resources\ColorDictionary.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+        
     </Application.Resources>
+    
+    
+    
+    
+    
+    
+    
+    
 </Application>

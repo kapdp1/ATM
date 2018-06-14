@@ -64,31 +64,38 @@
     <Compile Include="AvailableBalance.xaml.cs">
       <DependentUpon>AvailableBalance.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChangePin.xaml.cs">
+      <DependentUpon>ChangePin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginPin.xaml.cs">
       <DependentUpon>LoginPin.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SelectAccount.xaml.cs">
-      <DependentUpon>SelectAccount.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SelectAccountPage.xaml.cs">
-      <DependentUpon>SelectAccountPage.xaml</DependentUpon>
+    <Compile Include="ProcessingMessageBox.xaml.cs">
+      <DependentUpon>ProcessingMessageBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="SessionATM.cs" />
-    <Compile Include="SessionClass.cs" />
     <Compile Include="SessionMenu.xaml.cs">
       <DependentUpon>SessionMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SessionWindow.xaml.cs">
-      <DependentUpon>SessionWindow.xaml</DependentUpon>
+    <Compile Include="WithdrawPage.xaml.cs">
+      <DependentUpon>WithdrawPage.xaml</DependentUpon>
     </Compile>
     <Page Include="AccountNumberPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AvailableBalance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangePin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProcessingMessageBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,19 +123,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SelectAccount.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SelectAccountPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="SessionMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SessionWindow.xaml">
+    <Page Include="WithdrawPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

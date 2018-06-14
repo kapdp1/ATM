@@ -27,12 +27,14 @@ namespace ATM
 
         private void WithdrawButton(object sender, RoutedEventArgs e)
         {
-
+            WithdrawPage withdrawPage = new WithdrawPage();
+            NavigationService.Navigate(withdrawPage);
         }
 
         private void BalanceButton(object sender, RoutedEventArgs e)
         {
-
+            AvailableBalance availableBalance = new AvailableBalance();
+            NavigationService.Navigate(availableBalance);
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
@@ -42,12 +44,20 @@ namespace ATM
 
         private void ChangePinButton(object sender, RoutedEventArgs e)
         {
+            ChangePin changePin = new ChangePin();
+            bool? result = changePin.ShowDialog();
 
+            if (result.HasValue && result.Value)
+            {
+                SessionMenu sessionMenu = new SessionMenu();
+                NavigationService.Navigate(sessionMenu);
+            }
         }
 
         private void ExitButton(object sender, RoutedEventArgs e)
         {
-
+            AccountNumberPage accountNumberPage = new AccountNumberPage();
+            NavigationService.Navigate(accountNumberPage);
         }
     }
 }

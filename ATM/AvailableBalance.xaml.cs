@@ -27,7 +27,8 @@ namespace ATM
 
         private void WithdrawButton(object sender, RoutedEventArgs e)
         {
-
+            WithdrawPage withdrawPage = new WithdrawPage();
+            NavigationService.Navigate(withdrawPage);
         }
 
         private void ExitButton(object sender, RoutedEventArgs e)

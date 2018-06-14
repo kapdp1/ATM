@@ -9,6 +9,6 @@
 
 
     <Grid Margin="0,0,4,1">
-        <Frame x:Name="frame" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="790" Navigated="frame_Navigated"/>
+        <Frame x:Name="frame" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="790" Navigated="frame_Navigated" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
