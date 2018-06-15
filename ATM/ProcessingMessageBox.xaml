@@ -5,15 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ATM"
         mc:Ignorable="d"
-        Title="ATM" Height="214.513" Width="377.648" WindowStartupLocation="CenterScreen" Loaded="processingMessageWindow_Loaded" >
+        Title="ATM" Height="181.72" Width="380.462" WindowStartupLocation="CenterScreen" Loaded="processingMessageWindow_Loaded" >
 
-    <Grid Margin="0,0,0,0" Background="#FFAE7B5A">
+    <Grid Margin="0,0,-8,-21" Background="#FFB95310">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <ProgressBar Grid.ColumnSpan="2" Value="0" Name ="progressBar" HorizontalAlignment="Left" Height="31" Margin="65,114,0,0" VerticalAlignment="Top" Width="232" Background="#FFFFD0A0" Foreground="#FFE07A00"/>
-        <Label x:Name="label" Grid.ColumnSpan="2" Content="PROCESSING............" HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="18" Foreground="#FF2C2621"/>
+        <Label x:Name="label" Grid.ColumnSpan="2" Content="PLEASE WAIT..........." HorizontalAlignment="Left" Margin="95,74,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="18" Foreground="#FFF9E669"/>
     </Grid>
 </Window>

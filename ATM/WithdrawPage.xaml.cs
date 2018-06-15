@@ -70,7 +70,8 @@ namespace ATM
             ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
             processingMessageBox.ShowDialog();
 
-            //ProcessingMessageBox.status = 1;
+            SessionMenu sessionMenu = new SessionMenu();
+            NavigationService.Navigate(sessionMenu);
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)

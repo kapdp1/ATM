@@ -22,58 +22,31 @@ namespace ATM
     /// </summary>
     public partial class ProcessingMessageBox : Window
     {
-        public static int status;
 
         public ProcessingMessageBox()
         {
-           
-
             InitializeComponent();
-
-            //_loadProgressbar();
-
-           // if (status != 2) {
-            //    this.Close();
-           // }
-        
-
-
         }
 
-        //private void _loadProgressbar()
-        //{
-
-
-        //        //status = 2;
-
-        //        //Duration duration = new Duration(TimeSpan.FromSeconds(5));
-        //        //DoubleAnimation doubleAnimation = new DoubleAnimation(200.0, duration);
-
-        //        //progressBar.BeginAnimation(ProgressBar.ValueProperty, doubleAnimation);
-                
-
-        //        //if (progressBar.Value == 100)
-        //        //    this.Close();
-            
-        //}
 
         private void processingMessageWindow_Loaded(object sender, RoutedEventArgs e)
         {
-           
 
-            Duration duration = new Duration(TimeSpan.FromSeconds(5));
-            DoubleAnimation doubleAnimation = new DoubleAnimation(200.0, duration);
-            progressBar.BeginAnimation(ProgressBar.ValueProperty, doubleAnimation);
-
-            //status = 2;
-
-            //this.Close();
-
-
-            //if (progressBar.Value == 100)
-            //    this.Close();
+            Timer t = new Timer();
+            t.Interval = 5000;
+            t.Elapsed += new ElapsedEventHandler(t_Elapsed);
+            t.Start();
+        
         }
 
-        
+        void t_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            this.Dispatcher.Invoke(new Action(() =>
+            {
+                this.Close();
+            }), null);
+        }
+
+
     }
 }
