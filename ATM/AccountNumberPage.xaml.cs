@@ -34,22 +34,35 @@ namespace ATM
 
         private void submit_button(object sender, RoutedEventArgs e)
         {
-            LoginPin loginpin = new LoginPin();
-            bool? result = loginpin.ShowDialog();
-
-            if(result.HasValue && result.Value)
+            if (accountNumberText.Text.Trim() == String.Empty)
             {
-                SessionMenu sessionMenu = new SessionMenu();
-                NavigationService.Navigate(sessionMenu);
+                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER ACCOUNT NUMBER BEFORE PROCEED", "Confirmation");
+                accountNumberText.Text = "";
             }
+            else {
+                LoginPin loginpin = new LoginPin();
+                bool? result = loginpin.ShowDialog();
+                
+                if (result.HasValue && result.Value)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }     
         }
 
-        private void cancel_button(object sender, RoutedEventArgs e)
+        private void sign_outButton(object sender, RoutedEventArgs e)
         {
             MainPage mainPage = new MainPage();
             NavigationService.Navigate(mainPage);
         }
-        
-       
+
+
+
+        //private void signout_button(object sender, RoutedEventArgs e)
+        //{
+        //    MainPage mainPage = new MainPage();
+        //    NavigationService.Navigate(mainPage);
+        //}
     }
 }

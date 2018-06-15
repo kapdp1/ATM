@@ -39,6 +39,9 @@ namespace ATM
 
         private void BackButton(object sender, RoutedEventArgs e)
         {
+            
+            AccountNumberPage accountNumberPage = new AccountNumberPage();
+            NavigationService.Navigate(accountNumberPage);
 
         }
 
@@ -53,11 +56,11 @@ namespace ATM
                 NavigationService.Navigate(sessionMenu);
             }
         }
-
-        private void ExitButton(object sender, RoutedEventArgs e)
+        
+        private void SignOutButton(object sender, RoutedEventArgs e)
         {
-            AccountNumberPage accountNumberPage = new AccountNumberPage();
-            NavigationService.Navigate(accountNumberPage);
+            MainPage mainPage = new MainPage();
+            NavigationService.Navigate(mainPage);
         }
     }
 }

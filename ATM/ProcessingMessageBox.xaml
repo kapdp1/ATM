@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="ATM" Height="181.72" Width="380.462" WindowStartupLocation="CenterScreen" Loaded="processingMessageWindow_Loaded" >
 
-    <Grid Margin="0,0,-8,-21" Background="#FFB95310">
+    <Grid Margin="0,0,-8,-21" Background="#FFD66523">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Grid.ColumnSpan="2" Content="PLEASE WAIT..........." HorizontalAlignment="Left" Margin="95,74,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="18" Foreground="#FFE6A975"/>
+        <Label x:Name="label" Grid.ColumnSpan="2" Content="PLEASE WAIT.... " HorizontalAlignment="Left" Margin="96,67,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="24" Foreground="#FF724015"/>
     </Grid>
 </Window>

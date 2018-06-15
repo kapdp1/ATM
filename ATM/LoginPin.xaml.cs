@@ -35,7 +35,11 @@ namespace ATM
 
         private void SubmitButton(object sender, RoutedEventArgs e)
         {
-        
+            if (passwordBox.Password.Trim() == String.Empty) {
+                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER PASSWORD BEFORE PROCEED", "Confirmation");
+                passwordBox.Password = "";
+            }
+
             if(passwordBox.Password.Equals("1234"))
             {
                 this.DialogResult = true;
@@ -49,12 +53,8 @@ namespace ATM
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
-        {
-            
+        {          
             this.Close();
         }
-
-
-
     }
 }

@@ -36,5 +36,20 @@ namespace ATM
             SessionMenu session_menu = new SessionMenu();
             NavigationService.Navigate(session_menu);
         }
+
+        private void PrintReciptButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SignOutButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BackButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -80,6 +80,9 @@
     <Compile Include="SessionMenu.xaml.cs">
       <DependentUpon>SessionMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TransferMenu.xaml.cs">
+      <DependentUpon>TransferMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WithdrawPage.xaml.cs">
       <DependentUpon>WithdrawPage.xaml</DependentUpon>
     </Compile>
@@ -124,6 +127,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SessionMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransferMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
