@@ -69,11 +69,19 @@ namespace ATM
 
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
-            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
-            processingMessageBox.ShowDialog();
+            // withdrawAmmount
 
-            SessionMenu sessionMenu = new SessionMenu();
-            NavigationService.Navigate(sessionMenu);
+            if (withdrawAmmount.Text.Trim() != String.Empty)
+            { 
+                ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+                processingMessageBox.ShowDialog();
+
+                SessionMenu sessionMenu = new SessionMenu();
+                NavigationService.Navigate(sessionMenu);
+            }
+            else {
+                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER WITHDRAWAL BEFORE PROCEED!", "Confirmation");
+            }
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)

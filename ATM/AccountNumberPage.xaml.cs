@@ -36,7 +36,7 @@ namespace ATM
         {
             if (accountNumberText.Text.Trim() == String.Empty)
             {
-                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER ACCOUNT NUMBER BEFORE PROCEED", "Confirmation");
+                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER ACCOUNT NUMBER BEFORE PROCEED!", "Confirmation");
                 accountNumberText.Text = "";
             }
             else {

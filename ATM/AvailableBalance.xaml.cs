@@ -39,16 +39,19 @@ namespace ATM
 
         private void PrintReciptButton(object sender, RoutedEventArgs e)
         {
-
+            //TODO
         }
 
         private void SignOutButton(object sender, RoutedEventArgs e)
         {
-
+            MainPage mainPage = new MainPage();
+            NavigationService.Navigate(mainPage);
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
         {
+            SessionMenu sessionMenu = new SessionMenu();
+            NavigationService.Navigate(sessionMenu);
 
         }
     }

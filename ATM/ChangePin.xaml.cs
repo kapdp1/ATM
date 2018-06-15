@@ -26,10 +26,30 @@ namespace ATM
 
         private void SubmitButton(object sender, RoutedEventArgs e)
         {
-            if (currentPin.Password.Equals("1234"))
+            if (currentPin.Password.Trim() == String.Empty || newPin.Password.Trim() == String.Empty || confirmNewPin.Password.Trim() == String.Empty)
             {
-                this.DialogResult = true;
-                this.Close();
+                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER ALL!  !", "Confirmation");
+                currentPin.Password = "";
+                newPin.Password = "";
+                confirmNewPin.Password = "";
+            }
+            else {
+
+                if (currentPin.Password.Equals("1234"))
+                {
+                    this.DialogResult = true;
+                    this.Close();
+                    PasswordResetMessageBox passwordResetMessageBox= new PasswordResetMessageBox();
+                    passwordResetMessageBox.ShowDialog();
+
+
+                }
+                else {
+                    MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER YOUR CURRENT PASSWORD CORRECTLY!  !", "Confirmation");
+                    currentPin.Password = "";
+                    newPin.Password = "";
+                    confirmNewPin.Password = "";
+                }
             }
         }
 

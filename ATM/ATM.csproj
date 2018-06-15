@@ -73,6 +73,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PasswordResetMessageBox.xaml.cs">
+      <DependentUpon>PasswordResetMessageBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProcessingMessageBox.xaml.cs">
       <DependentUpon>ProcessingMessageBox.xaml</DependentUpon>
     </Compile>
@@ -95,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ChangePin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordResetMessageBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

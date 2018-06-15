@@ -11,3 +11,5 @@ namespace ATM
         public static bool IsStarted { get; set; }
     }
 }
+
+

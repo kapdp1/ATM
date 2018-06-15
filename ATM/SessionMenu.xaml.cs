@@ -62,5 +62,12 @@ namespace ATM
             MainPage mainPage = new MainPage();
             NavigationService.Navigate(mainPage);
         }
+
+      
+        private void TransferButton(object sender, RoutedEventArgs e)
+        {
+            TransferMenu transferMenu = new TransferMenu();
+            NavigationService.Navigate(transferMenu);
+        }
     }
 }
