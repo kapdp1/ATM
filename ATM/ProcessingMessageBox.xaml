@@ -13,6 +13,6 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Grid.ColumnSpan="2" Content="PLEASE WAIT..........." HorizontalAlignment="Left" Margin="95,74,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="18" Foreground="#FFF9E669"/>
+        <Label x:Name="label" Grid.ColumnSpan="2" Content="PLEASE WAIT..........." HorizontalAlignment="Left" Margin="95,74,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="18" Foreground="#FFE6A975"/>
     </Grid>
 </Window>

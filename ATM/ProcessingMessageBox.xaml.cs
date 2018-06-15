@@ -46,7 +46,5 @@ namespace ATM
                 this.Close();
             }), null);
         }
-
-
     }
 }

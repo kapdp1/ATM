@@ -20,6 +20,8 @@ namespace ATM
     /// </summary>
     public partial class WithdrawPage : Page
     {
+        public static int status = 1;
+
         public WithdrawPage()
         {
             InitializeComponent();
@@ -76,12 +78,34 @@ namespace ATM
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
+            SessionMenu sessionMenu = new SessionMenu();
+            NavigationService.Navigate(sessionMenu);
 
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
-            withdrawAmmount.Clear();
+             withdrawAmmount.Clear();
+
+            //int index = withdrawAmmount.SelectionStart;
+            //withdrawAmmount.Text = withdrawAmmount.Text.Remove(withdrawAmmount.SelectionStart - 1, 1);
+            //withdrawAmmount.Select(index - 1, 1);
+            //withdrawAmmount.Focus();
+
+            //int i = withdrawAmmount.Text.Length;
+            //withdrawAmmount.Text = withdrawAmmount.Text.Substring(0, i - 1);
+
+            //if (withdrawAmmount.Text.Length == 0)
+            //{
+            //    clearButton.IsEnabled = false;
+            //    status = 2;
+            //}
+            //else 
+            //{
+            //    clearButton.IsEnabled = true;
+            //}
+
+           // (withdrawAmmount.Text.Length == 1 || withdrawAmmount.Text.Length == 2 || withdrawAmmount.Text.Length == 3 || withdrawAmmount.Text.Length == 4 || withdrawAmmount.Text.Length == 5 || withdrawAmmount.Text.Length == 6 || withdrawAmmount.Text.Length == 7)
         }
     }
 }
