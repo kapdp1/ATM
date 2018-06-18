@@ -28,7 +28,7 @@ namespace ATM
         {
             if (currentPin.Password.Trim() == String.Empty || newPin.Password.Trim() == String.Empty || confirmNewPin.Password.Trim() == String.Empty)
             {
-                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER ALL!  !", "Confirmation");
+                MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE FILL ALL FIELDS!  !", "Confirmation");
                 currentPin.Password = "";
                 newPin.Password = "";
                 confirmNewPin.Password = "";

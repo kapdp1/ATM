@@ -32,29 +32,35 @@ namespace ATM
             e.Handled = regex.IsMatch(e.Text);
         }
 
-        private void submit_button(object sender, RoutedEventArgs e)
+      
+
+        private void sign_outButton(object sender, RoutedEventArgs e)
+        {
+            SignOutMessage signoutMessage = new SignOutMessage();
+            signoutMessage.ShowDialog();
+
+            MainPage mainPage = new MainPage();
+            NavigationService.Navigate(mainPage);
+        }
+
+        private void submit_button_Click(object sender, RoutedEventArgs e)
         {
             if (accountNumberText.Text.Trim() == String.Empty)
             {
                 MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER ACCOUNT NUMBER BEFORE PROCEED!", "Confirmation");
                 accountNumberText.Text = "";
             }
-            else {
+            else
+            {
                 LoginPin loginpin = new LoginPin();
                 bool? result = loginpin.ShowDialog();
-                
+
                 if (result.HasValue && result.Value)
                 {
                     SessionMenu sessionMenu = new SessionMenu();
                     NavigationService.Navigate(sessionMenu);
                 }
-            }     
-        }
-
-        private void sign_outButton(object sender, RoutedEventArgs e)
-        {
-            MainPage mainPage = new MainPage();
-            NavigationService.Navigate(mainPage);
+            }
         }
 
 

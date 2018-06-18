@@ -20,8 +20,6 @@ namespace ATM
     /// </summary>
     public partial class WithdrawPage : Page
     {
-        public static int status = 1;
-
         public WithdrawPage()
         {
             InitializeComponent();
@@ -29,55 +27,315 @@ namespace ATM
 
         private void _200WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                   SessionMenu sessionMenu = new SessionMenu();
+                   NavigationService.Navigate(sessionMenu);
+                }           
+              
+            }
+            else if (resultRecipt == MessageBoxResult.No) {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }     
         }
 
         private void _300WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void _500WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void _1000WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void _1500WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void _2000WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void _3000WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void _5000WithdrawButton(object sender, RoutedEventArgs e)
         {
+            //dbcon
+            ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+            processingMessageBox.ShowDialog();
+            withdrawAmmount.Clear();
+            MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                processingMessageBox_2.ShowDialog();
+
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+
+            }
+            else if (resultRecipt == MessageBoxResult.No)
+            {
+                MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                if (resultAnotherTransaction == MessageBoxResult.No)
+                {
+                    SessionMenu sessionMenu = new SessionMenu();
+                    NavigationService.Navigate(sessionMenu);
+                }
+            }
         }
 
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
-            // withdrawAmmount
-
+            
             if (withdrawAmmount.Text.Trim() != String.Empty)
-            { 
+            {
+                //dbcon
                 ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
                 processingMessageBox.ShowDialog();
+                MessageBoxResult resultRecipt = MessageBox.Show("YOUR TRANSACTION IS COMPLETED! DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
 
-                SessionMenu sessionMenu = new SessionMenu();
-                NavigationService.Navigate(sessionMenu);
+                if (resultRecipt == MessageBoxResult.Yes)
+                {
+                    ProcessingMessageBox processingMessageBox_2 = new ProcessingMessageBox();
+                    processingMessageBox_2.ShowDialog();
+
+                    MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                    if (resultAnotherTransaction == MessageBoxResult.No)
+                    {
+                        SessionMenu sessionMenu = new SessionMenu();
+                        NavigationService.Navigate(sessionMenu);
+                    }
+                    else {
+                        withdrawAmmount.Clear();
+                    }
+
+                }
+                else if (resultRecipt == MessageBoxResult.No)
+                {
+                    MessageBoxResult resultAnotherTransaction = MessageBox.Show("WOULD YOU LIKE TO PERFORM ANOTHER TRANSACTION?", "ATM", MessageBoxButton.YesNo);
+
+                    if (resultAnotherTransaction == MessageBoxResult.No)
+                    {
+                        SessionMenu sessionMenu = new SessionMenu();
+                        NavigationService.Navigate(sessionMenu);
+                    }
+                    else {
+                        withdrawAmmount.Clear();
+                    }
+                }
             }
             else {
                 MessageBoxResult messageBoxResult = MessageBox.Show("PLEASE ENTER WITHDRAWAL BEFORE PROCEED!", "Confirmation");
@@ -94,26 +352,6 @@ namespace ATM
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
              withdrawAmmount.Clear();
-
-            //int index = withdrawAmmount.SelectionStart;
-            //withdrawAmmount.Text = withdrawAmmount.Text.Remove(withdrawAmmount.SelectionStart - 1, 1);
-            //withdrawAmmount.Select(index - 1, 1);
-            //withdrawAmmount.Focus();
-
-            //int i = withdrawAmmount.Text.Length;
-            //withdrawAmmount.Text = withdrawAmmount.Text.Substring(0, i - 1);
-
-            //if (withdrawAmmount.Text.Length == 0)
-            //{
-            //    clearButton.IsEnabled = false;
-            //    status = 2;
-            //}
-            //else 
-            //{
-            //    clearButton.IsEnabled = true;
-            //}
-
-           // (withdrawAmmount.Text.Length == 1 || withdrawAmmount.Text.Length == 2 || withdrawAmmount.Text.Length == 3 || withdrawAmmount.Text.Length == 4 || withdrawAmmount.Text.Length == 5 || withdrawAmmount.Text.Length == 6 || withdrawAmmount.Text.Length == 7)
         }
     }
 }

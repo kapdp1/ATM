@@ -79,9 +79,12 @@
     <Compile Include="ProcessingMessageBox.xaml.cs">
       <DependentUpon>ProcessingMessageBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SessionATM.cs" />
+    <Compile Include="ATMSession.cs" />
     <Compile Include="SessionMenu.xaml.cs">
       <DependentUpon>SessionMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignOutMessageBox.xaml.cs">
+      <DependentUpon>SignOutMessageBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="TransferMenu.xaml.cs">
       <DependentUpon>TransferMenu.xaml</DependentUpon>
@@ -134,6 +137,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SessionMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignOutMessageBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

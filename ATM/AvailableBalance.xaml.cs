@@ -44,15 +44,31 @@ namespace ATM
 
         private void SignOutButton(object sender, RoutedEventArgs e)
         {
+            SignOutMessage signoutMessage = new SignOutMessage();
+            signoutMessage.ShowDialog();
+
             MainPage mainPage = new MainPage();
             NavigationService.Navigate(mainPage);
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
         {
-            SessionMenu sessionMenu = new SessionMenu();
-            NavigationService.Navigate(sessionMenu);
 
+            MessageBoxResult resultRecipt = MessageBox.Show("DO YOU WANT A PRINTED RECIPT ?", "ATM", MessageBoxButton.YesNo);
+
+            if (resultRecipt == MessageBoxResult.Yes)
+            {
+                ProcessingMessageBox processingMessageBox = new ProcessingMessageBox();
+                processingMessageBox.ShowDialog();
+
+                SessionMenu sessionMenu = new SessionMenu();
+                NavigationService.Navigate(sessionMenu);
+            }
+            else
+            {
+                SessionMenu sessionMenu = new SessionMenu();
+                NavigationService.Navigate(sessionMenu);
+            }        
         }
     }
 }

@@ -59,8 +59,13 @@ namespace ATM
         
         private void SignOutButton(object sender, RoutedEventArgs e)
         {
+            SignOutMessage signoutMessage = new SignOutMessage();
+            signoutMessage.ShowDialog();
+
             MainPage mainPage = new MainPage();
             NavigationService.Navigate(mainPage);
+
+            
         }
 
       

@@ -1,0 +1,20 @@
+﻿<Window x:Name="signOutMessage" x:Class="ATM.SignOutMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM"
+        mc:Ignorable="d"
+        Title="SignOutMessage" Height="215.444" Width="367.182" Loaded="signOutMessage_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,0" Background="#FFA84E00" HorizontalAlignment="Left" Width="357">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Grid.ColumnSpan="2" Content="THANK YOU! " HorizontalAlignment="Left" Margin="110,47,0,0" VerticalAlignment="Top" Width="116" FontWeight="Bold" FontSize="16" Foreground="#FFE6A975" Height="36"/>
+        <Label x:Name="label_Copy" Grid.ColumnSpan="3" Content="PLEASE REMOVE YOUR CARD !" HorizontalAlignment="Left" Margin="54,98,0,0" VerticalAlignment="Top" Width="248" FontWeight="Bold" FontSize="16" Foreground="#FFE6A975" Height="36"/>
+
+    </Grid>
+</Window>

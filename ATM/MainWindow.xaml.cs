@@ -23,6 +23,7 @@ namespace ATM
     {
         
         public MainWindow()
+
         {
 
             InitializeComponent();
